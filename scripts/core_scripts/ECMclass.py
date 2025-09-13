@@ -14,7 +14,7 @@ import math
 
 #%% User inputs
 
-path_to_data = '../../data/proccessed_data/'
+path_to_data = '../../data/processed_data/'
 metadata = 'metadata.csv'
 
 #%% Define ECM Class
