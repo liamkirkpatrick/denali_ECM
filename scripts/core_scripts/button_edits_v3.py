@@ -15,12 +15,8 @@ import sys
 sys.path.append("../core_scripts/")
 from ECMclass import ECM
 
-#%%
-
-print("Running")
-
 #%% Load data
-path_to_data = '../../data/proccessed_data/'
+path_to_data = '../../data/processed_data_before-button-edits/'
 path_to_new_data = '../data/processed_data/'
 metadata_file = 'metadata.csv'
 window = 10
@@ -29,15 +25,36 @@ print(path_to_data + metadata_file)
 
 meta = pd.read_csv(path_to_data + metadata_file)
 
+# this is where you select which core sections to proccess with the button editing tool. Currently set to run all dic1 sections
 data = [
-    ECM(row['core'], row['section'], row['face'], row['ACorDC'])
+    ECM(row['core'], row['section'], row['face'], row['ACorDC'],path_to_data)
     for _, row in meta.iterrows()
-
     if row['core'] == 'dic1']
 
 # import colormaps
 cbar_2d = matplotlib.colormaps['Spectral']
 cbar_line = matplotlib.colormaps['coolwarm']
+
+
+# Print all of the commands for the user
+print("################################################################")
+print("################################################################")
+print("/n")
+print("\nWelcome to the ECM button editing tool!")
+print("I apologize for the awkward interface, but I hit the point of diminishing returns on this one.")
+print("You will be shown each run in sequence. If you want to reference parallel plots (i.e. want to see DC data when editing AC data), open the figures seperately.")
+print("\nInstructions for button editing tool:")
+print("\nCommands:")
+print("  Select regions with mouse to toggle Button=1")
+print("  'd' - delete last selection")
+print("  'n' - next Y-dimension")
+print("  'b' - back Y-dimension")
+print("  'w' - write to file and move on")
+print("  'r' - skip without saving and move on")
+print("  'q' - quit program")
+print("/n")
+print("################################################################")
+print("################################################################")
 
 
 #%% Define processing function
@@ -128,7 +145,7 @@ def process_ecm(d):
     for yv in y_values:
         subset = df_but[df_but['Y_dimension(mm)'] == yv]
         if not subset['meas'].isna().all():  # Only plot if there are non-NaN values
-            print("    Plotting button points")
+            #print("    Plotting button points")
             line, ax_right.plot(subset['meas'], subset['True_depth(m)'], color='black', label='Button')
 
     # plot the left subplot
@@ -267,7 +284,7 @@ def process_ecm(d):
             plt.close(fig)
         elif key == 'q':
             # Quit the program
-            print("    Quitting...")
+            ("    Quitting...")
             plt.close(fig)
             sys.exit()
 

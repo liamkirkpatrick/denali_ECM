@@ -14,14 +14,14 @@ import math
 
 #%% User inputs
 
-path_to_data = '../../data/processed_data/'
+#path_to_data = '../../data/processed_data/'
 metadata = 'metadata.csv'
 
 #%% Define ECM Class
 
 class ECM:
     
-    def __init__(self,core,section,face,ACorDC):
+    def __init__(self,core,section,face,ACorDC,path_to_data):
         
         # open metadata csv
         meta = pd.read_csv(path_to_data+metadata)
@@ -43,8 +43,6 @@ class ECM:
         # open core csv
         fname = self.core+'-'+str(self.section)+'-'+self.face+'-'+self.ACorDC+'.csv'
         raw = pd.read_csv(path_to_data+fname)
-        
-
         
         # assign vectors
         self.meas = raw['meas'].to_numpy()
@@ -210,7 +208,7 @@ class ECM:
 if __name__ == "__main__":
     
     #test = ECM('alhic2201','10_1','t','AC')
-    test = ECM('alhic2302','159_3','t','AC')
+    test = ECM('alhic2302','159_3','t','AC','../../data/processed_data/')
     
     test.smooth(1)
     
