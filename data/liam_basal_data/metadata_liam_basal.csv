@@ -1,0 +1,28 @@
+core,time,section,face,ACorDC,AC_col_sp,DC_col_sp,DC_volt,note,mm_per_encode_step,num_tracks,ACDC_offset,laser_offset,Y_left,Y_right,AC_edgespace,DC_edgespace,idx1_raw,idx1_rel,idx2_rel,idx3_rel,idx_abs,xmin,xmax,header,filename
+dic1,2023-05-25-07-29,222a,t,DC,10,25,,first run of day,0.25,,239.5,20.8,-24.374,70.378,10,25,,0,,,203.374,,,22,dic1-222a-t-DC.csv
+dic1,2023-05-25-07-52,222a,t,AC,10,25,,try again on AC,0.25,,239.5,20.8,-10.0,60.0,10,25,,0,,,203.374,,,22,dic1-222a-t-AC.csv
+dic1,2023-05-25-08-17,222b,t,AC,10,25,,seccond peice of dic1-222,0.25,,239.5,20.8,-10.0,60.0,10,25,,0,,,203.753,,,22,dic1-222b-t-AC.csv
+dic1,2023-05-25-08-37,222b,t,DC,10,25,,dc run on 2nd peice of dic1-222,0.25,,239.5,20.8,-20.0,75.0,10,25,,0,,,203.753,,,22,dic1-222b-t-DC.csv
+dic1,2023-05-25-09-14,223e,t,DC,10,25,,fifth piece of 223e - dc,0.25,,239.5,20.8,-25.0,70.0,10,25,,0,,,204.666,,,22,dic1-223e-t-DC.csv
+dic1,2023-05-25-09-24,223e,t,AC,10,25,,fifth peice of 223e - ac,0.25,,239.5,20.8,-10.0,60.0,10,25,,0,,,204.666,,,22,dic1-223e-t-AC.csv
+dic1,2023-05-25-09-58,224abc,t,AC,10,25,,three peices from 224,0.25,,239.5,20.8,-10.0,60.0,10,25,,0,,,204.935,,,22,dic1-224abc-t-AC.csv
+dic1,2023-05-25-10-24,224abc,t,DC,10,25,,dc run of 3 chunks from 224,0.25,,239.5,20.8,-25.0,75.0,10,25,,0,,,204.935,,,22,dic1-224abc-t-DC.csv
+dic1,2023-05-25-12-33,225cd,t,AC,10,25,,tube top depth is 205.995,0.25,,239.5,20.8,-10.0,60.0,10,25,,0,,,206.185,,,22,dic1-225cd-t-AC.csv
+dic1,2023-05-25-12-51,225cd,t,DC,10,25,,3rd and 4th peices of 225 - startign 1cm from left edge due to step at the break.,0.25,,239.5,20.8,-15.0,70.0,10,25,,0,,,206.185,,,22,dic1-225cd-t-DC.csv
+dic1,2023-05-25-13-13,227a,t,AC,10,25,,first chunk of 227,0.25,,239.5,20.8,-10.0,60.0,10,25,,0,,,207.702,,,22,dic1-227a-t-AC.csv
+dic1,2023-05-25-13-29,227a,t,DC,10,25,,first chuck of 227 (of two),0.25,,239.5,20.8,-25.0,70.0,10,25,,0,,,207.702,,,22,dic1-227a-t-DC.csv
+dic1,2023-05-25-13-46,227b,t,DC,10,25,,seccond chunk of 227,0.25,,239.5,20.8,-25.0,70.0,10,25,,0,,,208.021,,,22,dic1-227b-t-DC.csv
+dic1,2023-05-25-14-34,228d,t,AC,10,25,,4th peice of 228,0.25,,239.5,20.8,-10.0,60.0,10,25,,0,,,208.972,,,22,dic1-228d-t-AC.csv
+dic1,2023-05-25-14-57,228d,t,DC,10,25,,4th chunk of 228. Third try (two failed DC attempts prior),0.25,,239.5,20.8,-25.0,55.0,10,25,,0,,,208.972,,,22,dic1-228d-t-DC.csv
+dic1,2023-05-25-15-45,227b,t,AC,10,25,,re-running to reduce ac ramp up time (put electrodes on rather than drag on),0.25,,239.5,20.8,-10.0,55.0,10,25,,0,,,208.021,,,22,dic1-227b-t-AC.csv
+dic1,2023-05-26-07-24,227a,t,AC,10,25,,re-run from yesterday,0.25,,239.5,20.8,-10.0,55.0,10,25,,0,,,207.702,,,22,dic1-227a-t-AC.csv
+dic1,2023-05-26-07-37,227a,t,DC,10,25,,repeating 227a dc - mostly to test DC after issue yesterday,0.25,,239.5,20.8,-25.0,70.0,10,25,,0,,,207.702,,,22,dic1-227a-t-DC.csv
+dic1,2023-05-26-07-56,230a,t,DC,10,25,,re-run after crashed on first dc attempt,0.25,,239.5,20.8,-25.0,70.0,10,25,,0,,,210.19,,,22,dic1-230a-t-DC.csv
+dic1,2023-05-26-08-05,230a,t,AC,10,25,,first ac run on 230a,0.25,,239.5,20.8,-10.0,55.0,10,25,,0,,,210.19,,,22,dic1-230a-t-AC.csv
+dic1,2023-05-26-08-17,230de,t,AC,10,25,,first run on 230de,0.25,,239.5,20.8,-10.0,55.0,10,25,,0,,,210.627,,,22,dic1-230de-t-AC.csv
+dic1,2023-05-26-09-38,219b,t,AC,10,25,,first run on 219b,0.25,,239.5,20.8,-10.0,55.0,10,25,,0,,,201.365,,,22,dic1-219b-t-AC.csv
+dic1,2023-05-26-10-03,221abcd,t,AC,10,25,,first run on 221. 4 peices together,0.25,,239.5,20.8,-10.0,55.0,10,25,,0,,,202.64,,,22,dic1-221abcd-t-AC.csv
+dic1,2023-05-26-10-31,217abc,t,AC,10,25,,first run on 3 peices of 217,0.25,,239.5,20.8,-10.0,55.0,10,25,,0,,,199.604,,,22,dic1-217abc-t-AC.csv
+dic1,2023-05-26-10-56,216abcdef,t,AC,10,25,,some major gaps and planning issues-see notes,0.25,,239.5,20.8,-10.0,55.0,10,25,,0,,,198.76,,,22,dic1-216abcdef-t-AC.csv
+dic1,2023-05-26-12-30,214abcdefg,t,AC,10,25,,lots of small chunks! some planner issues,0.25,,239.5,20.8,-10.0,55.0,10,25,,0,,,196.93,,,22,dic1-214abcdefg-t-AC.csv
+dic1,2023-05-26-13-08,231,t,AC,10,25,,bottom piece! lots of inclusions and dust,0.25,,239.5,20.8,-10.0,55.0,10,25,,0,,,210.85,,,22,dic1-231-t-AC.csv
