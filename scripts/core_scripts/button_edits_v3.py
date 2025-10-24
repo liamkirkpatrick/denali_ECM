@@ -16,8 +16,10 @@ sys.path.append("../core_scripts/")
 from ECMclass import ECM
 
 #%% Load data
-path_to_data = '../../data/processed_data_before-button-edits/'
-path_to_new_data = '../data/processed_data/'
+#path_to_data = '../../data/processed_data_before-button-edits/'
+#path_to_new_data = '../../data/processed_data/'
+path_to_data = '../../data/liam_basal_data/'
+path_to_new_data = '../../data/liam_basal_data_after-button-edits/'
 metadata_file = 'metadata.csv'
 window = 10
 
@@ -274,7 +276,7 @@ def process_ecm(d):
 
         elif key == 'w':
             # Save and move on
-            df.to_csv(path_to_new_data + d.core + '/' + fname, index=False)
+            df.to_csv(path_to_new_data + fname, index=False)
             print(f"    Saved {fname}")
             plt.close(fig)
 
